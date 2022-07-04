@@ -13,7 +13,6 @@ func main() {
 	fmt.Println("Usando contexto con valor", ctx1.Value("Nombre"))
 
 	deadline := time.Now().Add(time.Second * 5)
-
 	ctx, cancel := context.WithDeadline(ctx, deadline)
 	defer cancel()
 
